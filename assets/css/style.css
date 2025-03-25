@@ -231,7 +231,7 @@ h4 a:hover {
 }
 .section-title .title-main {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 30px;
   position: relative;
   z-index: 2;
   line-height: 1.25em;
@@ -4407,7 +4407,8 @@ object {
 /*-------------------------------------------------
     [ ## Preloader ]
 */
-.preloader {
+
+/* .preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -4448,7 +4449,7 @@ object {
 .preloader-icon span:last-child {
   animation-delay: -0.8s;
   -webkit-animation-delay: -0.8s;
-}
+} */
 
 @keyframes preloader-fx {
   0% {
@@ -6396,7 +6397,7 @@ a:hover, a:active {
 .hero-block .hero-title {
   font-weight: 700;
   color: #293b5f;
-  font-size: 78px;
+  font-size: 60px;
   position: relative;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -6410,7 +6411,7 @@ a:hover, a:active {
 }
 @media only screen and (max-width: 1366px) {
   .hero-block .hero-title {
-    font-size: 60px;
+    font-size: 40px;
   }
   .hero-block .hero-title.mrb-55 {
     margin-bottom: 35px;
