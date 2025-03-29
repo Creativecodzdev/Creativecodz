@@ -3946,23 +3946,37 @@ textarea.form-control-lg {
 }
 
 .nav-link {
+  position: relative;
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
   text-decoration: none;
-  background: none;
+  background: #0c0367;
   border: 0;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  width: 80%;
+  padding-left: 20px !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, width 0.2s ease-in-out;
 }
+
+
+
+
+
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
   }
 }
-.nav-link:hover, .nav-link:focus {
+
+.nav-link:hover, .nav-link:focus, .nav-link:hover::after {
   color: var(--bs-nav-link-hover-color);
+  border-bottom: 3px solid #0c0367 !important;
+  border-bottom-right-radius: 2px !important;
+  border-bottom-left-radius: 2px !important;
+  width: 100%;
 }
 .nav-link:focus-visible {
   outline: 0;
@@ -13185,6 +13199,7 @@ a.text-custom:hover {
 .navbar-custom.navbar-dark .nav-item .nav-link {
   color: #0f1f3e;
 }
+
 .navbar-custom.navbar-dark .nav-btn .nav-link {
   color: #0f1f3e;
 }
@@ -13721,7 +13736,7 @@ ul {
   left: 67%;
   bottom: 0;
   right: 0;
-  background-color: rgba(245, 137, 103, 0.2);
+  /* background-color: rgba(245, 137, 103, 0.2); */
 }
 .bg-home-agency .home-center {
   padding: 189px 0px 180px 0px;
