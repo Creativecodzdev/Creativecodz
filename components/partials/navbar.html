@@ -2,8 +2,8 @@
     <div class="container">
         <!-- LOGO -->
         <a class="logo text-uppercase" href="/">
-            <img src="/assets/images/logo-light.png" alt="" class="logo-light" style="height: 30px;"/>
-            <img src="/assets/images/logo-dark.png" alt="" class="logo-dark" style="height: 30px;"/>
+            <img src="../../assets/images/Gradient Modern Technology Company Developers Logo.svg" alt="" class="logo-light" style="height: 100px;"/>
+            <img src="../../assets/images/Gradient Modern Technology Company Developers Logo.svg" alt="" class="logo-dark" style="height: 100px;"/>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,25 +15,47 @@
                     <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#features" class="nav-link">About US</a>
                 </li>
                 <li class="nav-item">
                     <a href="#services" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#testimonial" class="nav-link">Reviews</a>
+                    <a href="#testimonial" class="nav-link">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#team" class="nav-link">Team</a>
+                    <a href="#team" class="nav-link">Careers</a>
                 </li>
+                <!-- <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Contact Us</a>
+                </li> -->
                 <li class="nav-item">
-                    <a href="#pricing" class="nav-link">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact Us</a>
                 </li>
             </ul>
-            <button class="btn btn-sm btn-primary ms-4">Create Account</button>
+            <!-- <button class="btn btn-sm btn-primary ms-4">Create Account</button> -->
+
+            <div class="buttons_anim" style="position: relative; top: 18px; left: 50px;">
+                <button class="blob-btn_anim">
+                    Let's Talk
+                  <span class="blob-btn__inner_anim">
+                    <span class="blob-btn__blobs_anim">
+                      <span class="blob-btn__blob_anim"></span>
+                      <span class="blob-btn__blob_anim"></span>
+                      <span class="blob-btn__blob_anim"></span>
+                      <span class="blob-btn__blob_anim"></span>
+                    </span>
+                  </span>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="position: absolute;">
+                    <defs>
+                      <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                        <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                      </filter>
+                    </defs>
+                  </svg>
         </div>
     </div>
 </nav>
