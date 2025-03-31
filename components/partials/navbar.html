@@ -1,12 +1,41 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky-dark navbar-dark" style="background-color: #fff;" id="navbar-sticky">
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky-dark navbar-dark" id="navbar-sticky">
     <div class="container">
         <!-- LOGO -->
         <a class="logo text-uppercase" href="/">
             <img src="../../assets/images/Gradient Modern Technology Company Developers Logo.svg" alt="" class="logo-light" style="height: 100px;"/>
             <img src="../../assets/images/Gradient Modern Technology Company Developers Logo.svg" alt="" class="logo-dark" style="height: 100px;"/>
         </a>
+
+        <!-- Toggle Button -->
+        <button class="navbar-toggler" type="button" id="navbarToggler">
+            <i class="ti ti-menu"></i>
+        </button>
+
+        <!-- Collapsible Navbar -->
+        <div class="collapse navbar-collapse" id="navbarCollapse1">
+            <ul class="navbar-nav navbar-center">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#testimonial" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link">Careers</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky-dark navbar-dark" style="background-color: #fff;" id="navbar-sticky">
+    <div class="container">
+        <a class="logo text-uppercase" href="/">
+            <img src="../../assets/images/Gradient Modern Technology Company Developers Logo.svg" alt="" class="logo-light" style="height: 100px;"/>
+            <img src="../../assets/images/Gradient Modern Technology Company Developers Logo.svg" alt="" class="logo-dark" style="height: 100px;"/>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggler">
             <i class="ti ti-menu"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse" style="display: flex; justify-content: space-evenly;">
@@ -26,14 +55,10 @@
                 <li class="nav-item">
                     <a href="#team" class="nav-link"><span class="nav_under_anim">Careers</span></a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a href="#pricing" class="nav-link">Contact Us</a>
-                </li> -->
                 <li class="nav-item">
                     <a href="#contact" class="nav-link"><span class="nav_under_anim">Contact Us</span></a>
                 </li>
             </ul>
-            <!-- <button class="btn btn-sm btn-primary ms-4">Create Account</button> -->
 
             <div class="buttons_anim" style="position: relative; top: 18px; left: 50px;">
                 <button class="blob-btn_anim">
@@ -58,4 +83,22 @@
                   </svg>
         </div>
     </div>
-</nav>
+</nav> -->
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () { 
+  const toggler = document.getElementById("navbarToggler");
+  const menu = document.getElementById("navbarCollapse1");
+
+  toggler.addEventListener("click", function () {
+      if (menu.style.visibility === "hidden" || menu.style.visibility === "") {
+          menu.style.visibility = "visible";
+          menu.style.height = "auto";
+      } else {
+          menu.style.visibility = "hidden";
+          menu.style.height = "0";
+      }
+  });
+});
+</script>

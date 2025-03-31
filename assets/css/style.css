@@ -804,7 +804,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 1340px;
   }
 }
 @media (min-width: 1400px) {
@@ -12385,9 +12385,16 @@ html {
   position: relative;
 }
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .container {
     max-width: 1140px;
+  }
+} */
+
+
+@media (min-width: 1400px) {
+  .container {
+      max-width: 1337px;
   }
 }
 #preloader {
@@ -13169,6 +13176,7 @@ a.text-custom:hover {
 
 .navbar-custom {
   background-color: #f7f7f8 !important;
+  /* background-color: #e6e0f8 !important; */
   /* background-color: red; */
   padding: 0px 0px;
   width: 100%;
@@ -13307,6 +13315,16 @@ a.text-custom:hover {
     display: block;
   }
 }
+
+@media (max-width: 767.98px) {
+  #navbarCollapse1 {
+      visibility: hidden !important;
+      height: 0 !important;
+      overflow: hidden !important;
+      transition: visibility 0.3s, height 0.3s ease-in-out !important;
+  }
+}
+
 .hero-section {
   background-image: url("../images/live-bg.png");
   background-position: center;
@@ -13560,6 +13578,7 @@ ul {
 .home-desc-center {
   display: table-cell;
   vertical-align: middle;
+  /* background-color: #e6e0f8 !important; */
 }
 
 .home-title h1, .home-title .h1 {
@@ -13739,7 +13758,7 @@ ul {
   /* background-color: rgba(245, 137, 103, 0.2); */
 }
 .bg-home-agency .home-center {
-  padding: 189px 0px 180px 0px;
+  padding: 150px 0px 150px 0px;
 }
 
 .agency-home-title {
@@ -14565,9 +14584,6 @@ ul {
 .spinner {
   border-left: 5px solid #5a4bad;
 }
-
-
-
 
 
 

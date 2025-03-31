@@ -1,3 +1,4 @@
+
 // Function to load external HTML components
 function loadComponent(id, url) {
     fetch(url)
@@ -12,4 +13,19 @@ function loadComponent(id, url) {
     loadComponent('content', 'components/pages/ContentPage.html');
     loadComponent('footer', 'components/partials/footer.html');
   });
+
+
+//   document.addEventListener("DOMContentLoaded", function () {
+//     const toggler = document.getElementById("navbarToggler");
+//     const menu = document.getElementById("navbarCollapse");
+
+//     toggler.addEventListener("click", function () {
+//         menu.classList.toggle("show"); // Toggle the 'show' class
+//     });
+// });
+
+
+
+
+
   
