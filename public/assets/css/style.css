@@ -13222,7 +13222,7 @@ a.text-custom:hover {
   font-size: 24px;
   margin-top: 5px;
   margin-bottom: 0px;
-  color: #fff;
+  color: #ff0000;
 }
 .navbar-toggler:focus {
   outline: none;
@@ -13269,12 +13269,12 @@ a.text-custom:hover {
   display: none;
 }
 
-.nav-sticky .logo .logo-dark {
+/* .nav-sticky .logo .logo-dark {
   display: inline-block;
 }
 .nav-sticky .logo .logo-light {
   display: none;
-}
+} */
 
 /********* Responsive *********/
 @media (min-width: 200px) and (max-width: 768px) {
@@ -13316,14 +13316,14 @@ a.text-custom:hover {
   }
 }
 
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
   #navbarCollapse1 {
       visibility: hidden !important;
       height: 0 !important;
       overflow: hidden !important;
       transition: visibility 0.3s, height 0.3s ease-in-out !important;
   }
-}
+} */
 
 .hero-section {
   background-image: url("../images/live-bg.png");
@@ -14102,7 +14102,7 @@ ul {
 
 /******** software-features ********/
 .bg-soft {
-  background-image: url("../images/bg-software.png");
+  /* background-image: url("../images/bg-software.png"); */
   background-color: #1f222b;
 }
 
@@ -14275,7 +14275,7 @@ ul {
 
 .bg-app-overlay {
   position: absolute;
-  background: url("../images/bg-app-overlay.png");
+  /* background: url("../images/bg-app-overlay.png"); */
   top: 0;
   right: 0;
   left: 0;
