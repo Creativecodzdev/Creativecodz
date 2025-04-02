@@ -23,13 +23,13 @@ const FooterComp = () => {
                 <h5 className="text-white fw-medium">Solution</h5>
                 <ul className="mt-4">
                     <li>
-                        <a href="javascript:void(0);" className="">Enterprise</a>
+                        <a   className="">Enterprise</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" className="">By Workflow</a>
+                        <a   className="">By Workflow</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" className="">By Team</a>
+                        <a   className="">By Team</a>
                     </li>
                 </ul>
             </div>
@@ -37,19 +37,19 @@ const FooterComp = () => {
                 <h5 className="text-white fw-medium">Company</h5>
                 <ul className="mt-4">
                     <li>
-                        <a href="javascript:void(0);" className="">About Us</a>
+                        <a   className="">About Us</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" className="">News &amp; Press</a>
+                        <a   className="">News &amp; Press</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" className="">Our Customer</a>
+                        <a   className="">Our Customer</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" className="">Leadership</a>
+                        <a   className="">Leadership</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" className="">Careers</a>
+                        <a   className="">Careers</a>
                     </li>
 
                 </ul>
@@ -58,16 +58,16 @@ const FooterComp = () => {
                 <h5 className="text-white fw-medium">Resources</h5>
                 <ul className="mt-4">
                     <li>
-                        <a href="javascript:void(0);" className="">Blog </a>
+                        <a   className="">Blog </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" className="">Webinar &amp; Events </a>
+                        <a   className="">Webinar &amp; Events </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" className="">Podcast</a>
+                        <a   className="">Podcast</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" className="">E-book &amp; Guides</a>
+                        <a   className="">E-book &amp; Guides</a>
                     </li>
                 </ul>
             </div>
@@ -75,13 +75,13 @@ const FooterComp = () => {
                 <h5 className="text-white fw-medium">Contact Us</h5>
                 <ul className="mt-4">
                     <li>
-                        <a href="javascript:void(0);" className="">Contact Sales </a>
+                        <a   className="">Contact Sales </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" className="">Become Partner</a>
+                        <a   className="">Become Partner</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" className="">Affliate Program</a>
+                        <a   className="">Affliate Program</a>
                     </li>
 
                 </ul>
@@ -93,30 +93,30 @@ const FooterComp = () => {
                 <p className="m-0 fs-6 text-white-50">
                     <script> document.write(new Date().getFullYear())</script>
                     © Copyright 2025 - CreativeCodz. All Rights Reserved 
-                    {/* <a href="javascript:void(0);" className="text-white">MarkeyThemes</a> */}
+                    {/* <a   className="text-white">MarkeyThemes</a> */}
                 </p>
             </div>
             <div className="col-lg-4 text-lg-center">
                 <ul className="d-flex gap-2 m-0 align-items-center justify-content-center">
                     <li className="m-0">
                         <div className="icon d-flex rounded-circle align-items-center justify-content-center">
-                            <a href="javascript:void(0);" className="text-dark f-18"><i
+                            <a   className="text-dark f-18"><i
                                     className="ti ti-brand-facebook"></i></a>
                         </div>
                     </li>
                     <li className="m-0">
                         <div className="icon d-flex rounded-circle align-items-center justify-content-center">
-                            <a href="javascript:void(0);" className="text-dark f-18"><i className="ti ti-brand-x"></i></a>
+                            <a   className="text-dark f-18"><i className="ti ti-brand-x"></i></a>
                         </div>
                     </li>
                     <li className="m-0">
                         <div className="icon d-flex rounded-circle align-items-center justify-content-center">
-                            <a href="javascript:void(0);" className="text-dark f-18"><i className="ti ti-brand-youtube"></i></a>
+                            <a   className="text-dark f-18"><i className="ti ti-brand-youtube"></i></a>
                         </div>
                     </li>
                     <li className="m-0">
                         <div className="icon d-flex rounded-circle align-items-center justify-content-center">
-                            <a href="javascript:void(0);" className="text-dark f-18"><i
+                            <a   className="text-dark f-18"><i
                                     className="ti ti-brand-instagram"></i></a>
                         </div>
                     </li>
@@ -125,10 +125,10 @@ const FooterComp = () => {
             <div className="col-lg-3 text-lg-center">
                 <div className="row g-3">
                     <div className="col-lg-6">
-                        <a href="javascript:void(0);" className="text-white">Terms Of Us</a>
+                        <a   className="text-white">Terms Of Us</a>
                     </div>
                     <div className="col-lg-6">
-                        <a href="javascript:void(0);" className="text-white">Privacy Policy</a>
+                        <a   className="text-white">Privacy Policy</a>
                     </div>
                 </div>
             </div>

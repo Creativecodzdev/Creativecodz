@@ -10,7 +10,7 @@ const ContentComp = () => {
                 <div className="row align-items-center justify-content-between position-relative">
                     <div className="col-lg-5">
                         <div className="title-sm border p-1 d-inline-block mb-4 rounded-pill px-2 bg-light">
-                            <a href="javascript:void(0);">
+                            <a  >
                                 <p className="fs-6 mb-0 text-primary fw-medium"><span
                                         className="badge text-light bg-primary rounded-pill me-2 mb-1">New</span>Show
                                     Product <i className="ti ti-arrow-narrow-right ms-1 align-middle"></i></p>
@@ -75,8 +75,8 @@ const ContentComp = () => {
                             </div>
                         </div>
                         <div className="main-btn mt-4">
-                            <a href="javascript:void(0);" className="btn btn-primary">Explore Now</a>
-                            <a href="javascript:void(0);" className="btn btn-outline-primary ms-2">Watch Video</a>
+                            <a   className="btn btn-primary">Explore Now</a>
+                            <a   className="btn btn-outline-primary ms-2">Watch Video</a>
                         </div>
                     </div>
                     <div className="col-lg-7">
