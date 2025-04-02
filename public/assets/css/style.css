@@ -13212,10 +13212,10 @@ a.text-custom:hover {
   color: #0f1f3e;
 }
 .navbar-custom.navbar-dark .logo .logo-light {
-  display: none;
+  /* display: none; */
 }
 .navbar-custom.navbar-dark .logo .logo-dark {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .navbar-toggler {
@@ -13263,10 +13263,10 @@ a.text-custom:hover {
 }
 
 .logo .logo-light {
-  display: inline-block;
+  /* display: inline-block; */
 }
 .logo .logo-dark {
-  display: none;
+  /* display: none; */
 }
 
 /* .nav-sticky .logo .logo-dark {
@@ -13309,10 +13309,10 @@ a.text-custom:hover {
     margin: 0px;
   }
   .logo .logo-light {
-    display: none;
+    /* display: none; */
   }
   .logo .logo-dark {
-    display: block;
+    /* display: block; */
   }
 }
 

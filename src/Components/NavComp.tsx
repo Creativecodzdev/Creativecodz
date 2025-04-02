@@ -37,7 +37,7 @@ const NavComp: React.FC = () => {
 
   return (
     <nav className="navbar navbar-expand-lg fixed-top navbar-custom">
-      <div className="container">
+      <div className="container" style={{display:"flex",flexWrap:'wrap',justifyContent:'center',alignItems:'center' , columnGap:'10px'}}>
         <a className="logo text-uppercase" href="/">
           <img
             src="../../assets/images/Gradient Modern Technology Company Developers Logo.svg"
@@ -87,7 +87,7 @@ const NavComp: React.FC = () => {
           </ul>
         </div>
 
-        <div className="buttons_anim" style={{ position: 'relative', top: '18px', left: '50px' }}>
+        <div className="buttons_anim" style={{ position: 'relative', top: '18px'}}>
               <button className="blob-btn_anim">
                 Let's Talk
                 <span className="blob-btn__inner_anim">
