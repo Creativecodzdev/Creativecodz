@@ -92,7 +92,8 @@ const FooterComp = () => {
             <div className="col-lg-5">
                 <p className="m-0 fs-6 text-white-50">
                     <script> document.write(new Date().getFullYear())</script>
-                    © Skywave - Design crafted by ❤️ <a href="javascript:void(0);" className="text-white">MarkeyThemes</a>
+                    © Copyright 2025 - CreativeCodz. All Rights Reserved 
+                    {/* <a href="javascript:void(0);" className="text-white">MarkeyThemes</a> */}
                 </p>
             </div>
             <div className="col-lg-4 text-lg-center">

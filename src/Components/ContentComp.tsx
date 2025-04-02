@@ -20,16 +20,33 @@ const ContentComp = () => {
                         <p className="text-muted">Creativecodz is committed to empowering our clients with top-tier digital 
                             solutions. No matter the budget, we deliver innovative, high-value results that drive success. 
                             Every day, we put our best effort forward to exceed expectations and achieve excellence.</p>
-                        <div className="row mt-4">
-                            <div className="col-lg-6">
+                        <div className="row mt-4" style={{display:'flex', flexWrap:'wrap', justifyContent:'space-evenly'}}>
+                            <div className="col-lg-6" style={{display:'flex', flexWrap:'wrap', justifyContent:'center'}}>
                                 <p className="fs-6 text-dark fw-medium"><i
-                                        className="ti ti-circle-check-filled text-success fs-5 me-3"></i>7 Day Free
-                                    Trial</p>
+                                        className="ti ti-circle-check-filled text-success fs-5 me-3"></i></p>
+                                <p>Web Design</p>
 
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6" style={{display:'flex', flexWrap:'wrap', justifyContent:'center'}}>
                                 <p className="fs-6 text-dark fw-medium"><i
-                                        className="ti ti-circle-check-filled text-success fs-5 me-3"></i>Easy To Set Up
+                                        className="ti ti-circle-check-filled text-success fs-5 me-3"></i>
+                                </p>
+                                <p>Dgital Marketing</p>
+                            </div>
+
+                            <div className="col-lg-6" style={{display:'flex', flexWrap:'wrap', justifyContent:'center', paddingLeft:'53px'}}>
+                                <p className="fs-6 text-dark fw-medium"><i
+                                        className="ti ti-circle-check-filled text-success fs-5 me-3"></i>
+                                </p>
+                                <p>App Development</p>
+                            </div>
+
+                            <div className="col-lg-6" style={{display:'flex', flexWrap:'wrap', justifyContent:'center',paddingRight:'23px'}}>
+                                <p className="fs-6 text-dark fw-medium"><i
+                                        className="ti ti-circle-check-filled text-success fs-5 me-3"></i> 
+                                </p>
+                                <p>
+                                    Graphig Design
                                 </p>
                             </div>
                         </div>
@@ -345,7 +362,7 @@ const ContentComp = () => {
             <div className="col-lg-4">
                 <div className="card border">
                     <div className="card-body">
-                        <img src="/assets/images/agency-services.p/ng" alt=""
+                        <img src="/assets/images/agency-services.png" alt=""
                              className="img-fluid bg-light"/>
                         <div className="mt-3">
                             <h5>Agency Landing Page</h5>

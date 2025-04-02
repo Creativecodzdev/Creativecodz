@@ -3973,10 +3973,10 @@ textarea.form-control-lg {
 
 .nav-link:hover, .nav-link:focus, .nav-link:hover::after {
   color: var(--bs-nav-link-hover-color);
-  border-bottom: 3px solid #0c0367 !important;
+  /* border-bottom: 3px solid #0c0367 !important;
   border-bottom-right-radius: 2px !important;
-  border-bottom-left-radius: 2px !important;
-  width: 100%;
+  border-bottom-left-radius: 2px !important; */
+  /* width: 100%; */
 }
 .nav-link:focus-visible {
   outline: 0;
@@ -13189,11 +13189,11 @@ a.text-custom:hover {
 }
 .navbar-custom .navbar-nav li a {
   line-height: 26px;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   transition: all 0.5s;
   background-color: transparent !important;
-  padding: 6px 0;
+  padding: 1px 0;
   margin: 0 15px;
   font-weight: 500;
 }
@@ -14718,5 +14718,39 @@ ul {
 @supports(filter: url('#goo')) {
   .blob-btn_anim:hover .blob-btn__blob_anim {
     transform: translateZ(0) scale(1.4);
+  }
+}
+
+
+
+.submenu {
+  background: #fff;
+  position: absolute;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: left;
+}
+
+.submenu li {
+  padding: 5px 10px;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.submenu li a:hover {
+  color: #5a4bad;
+}
+
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+      justify-content: center;
   }
 }
