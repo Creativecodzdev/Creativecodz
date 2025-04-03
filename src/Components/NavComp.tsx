@@ -37,7 +37,7 @@ const NavComp: React.FC = () => {
 
   return (
     <nav className="navbar navbar-expand-lg fixed-top navbar-custom">
-      <div className="container" style={{display:"flex",flexWrap:'wrap',justifyContent:'center',alignItems:'center' , columnGap:'10px'}}>
+      <div className="container" style={{display:"flex",flexWrap:'wrap',justifyContent:'space-between',alignItems:'center' , columnGap:'10px'}}>
         <a className="logo text-uppercase" href="/">
           <img
             src="../../assets/images/Gradient Modern Technology Company Developers Logo.svg"
@@ -52,7 +52,7 @@ const NavComp: React.FC = () => {
         </button>
 
         <div className={`${isMobile && isCollapsed ? "collapse" : ""} navbar-collapse`}>
-          <ul className="navbar-nav navbar-center" >
+          <ul className="navbar-nav navbar-center">
             <li className="nav-item">
               <a href="#home" className="nav-link">Home</a>
             </li>
@@ -87,6 +87,7 @@ const NavComp: React.FC = () => {
           </ul>
         </div>
 
+        {!isMobile || !isCollapsed ?
         <div className="buttons_anim" style={{ position: 'relative', top: '18px'}}>
               <button className="blob-btn_anim">
                 Let's Talk
@@ -108,7 +109,7 @@ const NavComp: React.FC = () => {
                   </filter>
                 </defs>
               </svg>
-            </div>
+            </div> :null}
       </div>
     </nav>
   );

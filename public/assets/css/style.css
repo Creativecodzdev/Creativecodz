@@ -3957,6 +3957,7 @@ textarea.form-control-lg {
   border: 0;
   width: 80%;
   padding-left: 20px !important;
+  text-align: left;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, width 0.2s ease-in-out;
 }
 
@@ -3968,6 +3969,7 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
+    /* text-align: left !important; */
   }
 }
 
