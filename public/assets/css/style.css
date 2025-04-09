@@ -9,7 +9,20 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"); */
+
+/* backgroundColor ==> honeydew */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro'); */
+
+.lora {
+  font-family: "Lora", serif; 
+  font-weight: 400; /* or any weight you want: 400, 500, 700 etc */
+  font-style: normal;
+}
+
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -87,7 +100,7 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #e7f3f8;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
@@ -3593,6 +3606,10 @@ textarea.form-control-lg {
 .dropdown-menu-end[data-bs-popper] {
   right: 0;
   left: auto;
+}
+
+.dropdowncustom {
+  font-weight: bold !important;
 }
 
 @media (min-width: 576px) {
@@ -8846,6 +8863,11 @@ textarea.form-control-lg {
 .text-muted {
   --bs-text-opacity: 1;
   color: var(--bs-secondary-color) !important;
+  font-family: var( --e-global-typography-primary-font-family ), Sans-serif !important;
+  /* font-weight: bold !important; */
+  font-size: 12px !important;
+  color: #484444 !important;
+  font-weight: bold;
 }
 
 .text-black-50 {
@@ -12350,8 +12372,11 @@ textarea.form-control-lg {
 13.Default
 ************************/
 /** Google font **/
+
+/* font-family: "Rethink Sans", sans-serif; change to font-family: "Lora", serif; */
+
 body {
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Lora", serif;
   font-size: 16px;
 }
 
@@ -12366,7 +12391,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Lora", serif;
 }
 
 a {
@@ -12551,7 +12576,7 @@ html {
 .title p.subtitle {
   letter-spacing: 4px;
   font-weight: 600;
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Lora", serif;
 }
 
 .f-12 {
@@ -12673,7 +12698,7 @@ a.text-custom:hover {
   transition: all 0.5s;
   font-weight: 500;
   border-radius: 30px;
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Lora", serif;
   box-shadow: none !important;
 }
 .btn.btn-sm, .btn-group-sm > .btn {
@@ -13177,7 +13202,7 @@ a.text-custom:hover {
 }
 
 .navbar-custom {
-  background-color: #f7f7f8 !important;
+  background-color: #e7f3f8 !important;
   /* background-color: #e6e0f8 !important; */
   /* background-color: red; */
   padding: 0px 0px;
@@ -13187,7 +13212,7 @@ a.text-custom:hover {
   z-index: 999;
   margin-bottom: 0px;
   transition: all 0.5s ease-in-out;
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Lora", serif;
 }
 .navbar-custom .navbar-nav li a {
   line-height: 26px;
@@ -13748,6 +13773,7 @@ ul {
 
 .bg-home-agency {
   /* background-image: linear-gradient(#ffefed 2px, transparent 2px), linear-gradient(to right, #ffefed 2px, transparent 2px); */
+  background-color: #e7f3f8 !important;
   background-size: 85px 85px;
 }
 .bg-home-agency::before {
@@ -14756,3 +14782,83 @@ ul {
       justify-content: center;
   }
 }
+
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+.animated-imageHome {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards, floatImage 3s ease-in-out infinite;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+.animated-imageHome:hover {
+  transform: scale(1.05);
+  box-shadow: 0 40px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* @keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+@keyframes floatImage {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
+/* Apply fadeIn animation to each item with staggered delay */
+.animated-item {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+/* Delay classes for staggered animation */
+.delay-1 { animation-delay: 0.6s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+
+/* Font animation - subtle scaling */
+.animated-text {
+  animation: pulseFont 2s infinite;
+}
+
+@keyframes pulseFont {
+  0%, 100% {
+    transform: scale(1);
+    color: #000;
+  }
+  50% {
+    transform: scale(1.05);
+    color: #5a4bad; /* Optional: animate color */
+  }
+}
+

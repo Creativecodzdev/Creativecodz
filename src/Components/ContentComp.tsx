@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+import EnquiryModal from './PopupModeules/MainEnquriyForm/EnquiryModal';
 
 const ContentComp = () => {
+
+    const [open, setOpen] = useState(false);
+    
+
   return (
     <div>
-      <section className="bg-home-agency bg-light position-relative" id="home">
+        
+
+      <section className="bg-home-agency bg-light position-relative lora" id="home">
     <div className="home-center">
         <div className="home-desc-center">
             <div className="container">
@@ -20,36 +27,28 @@ const ContentComp = () => {
                         <p className="text-muted">Creativecodz is committed to empowering our clients with top-tier digital 
                             solutions. No matter the budget, we deliver innovative, high-value results that drive success. 
                             Every day, we put our best effort forward to exceed expectations and achieve excellence.</p>
-                        <div className="row mt-4" style={{display:'flex', flexWrap:'wrap', justifyContent:'space-evenly'}}>
-                            <div className="col-lg-6" style={{display:'flex', flexWrap:'wrap', justifyContent:'center'}}>
-                                <p className="fs-6 text-dark fw-medium"><i
-                                        className="ti ti-circle-check-filled text-success fs-5 me-3"></i></p>
-                                <p>Web Design</p>
+<div className="row mt-4" style={{display:'flex', flexWrap:'wrap', justifyContent:'space-evenly'}}>
+    <div className="col-lg-6 animated-item delay-1" style={{display:'flex', flexWrap:'wrap', justifyContent:'center',alignItems:'center'}}>
+        <p className="fs-6 text-dark fw-medium"><i className="ti ti-circle-check-filled text-success fs-5 me-3"></i></p>
+        <p style={{fontWeight:'bold'}} className="animated-text">Web Design</p>
+    </div>
 
-                            </div>
-                            <div className="col-lg-6" style={{display:'flex', flexWrap:'wrap', justifyContent:'center'}}>
-                                <p className="fs-6 text-dark fw-medium"><i
-                                        className="ti ti-circle-check-filled text-success fs-5 me-3"></i>
-                                </p>
-                                <p>Dgital Marketing</p>
-                            </div>
+    <div className="col-lg-6 animated-item delay-2" style={{display:'flex', flexWrap:'wrap', justifyContent:'center', alignItems:'center'}}>
+        <p className="fs-6 text-dark fw-medium"><i className="ti ti-circle-check-filled text-success fs-5 me-3"></i></p>
+        <p style={{fontWeight:'bold'}} className="animated-text">Dgital Marketing</p>
+    </div>
 
-                            <div className="col-lg-6" style={{display:'flex', flexWrap:'wrap', justifyContent:'center', paddingLeft:'53px'}}>
-                                <p className="fs-6 text-dark fw-medium"><i
-                                        className="ti ti-circle-check-filled text-success fs-5 me-3"></i>
-                                </p>
-                                <p>App Development</p>
-                            </div>
+    <div className="col-lg-6 animated-item delay-3" style={{display:'flex', flexWrap:'wrap', justifyContent:'center', paddingLeft:'53px', alignItems:'center'}}>
+        <p className="fs-6 text-dark fw-medium"><i className="ti ti-circle-check-filled text-success fs-5 me-3"></i></p>
+        <p style={{fontWeight:'bold'}} className="animated-text">App Development</p>
+    </div>
 
-                            <div className="col-lg-6" style={{display:'flex', flexWrap:'wrap', justifyContent:'center',paddingRight:'23px'}}>
-                                <p className="fs-6 text-dark fw-medium"><i
-                                        className="ti ti-circle-check-filled text-success fs-5 me-3"></i> 
-                                </p>
-                                <p>
-                                    Graphig Design
-                                </p>
-                            </div>
-                        </div>
+    <div className="col-lg-6 animated-item delay-4" style={{display:'flex', flexWrap:'wrap', justifyContent:'center',paddingRight:'23px', alignItems:'center'}}>
+        <p className="fs-6 text-dark fw-medium"><i className="ti ti-circle-check-filled text-success fs-5 me-3"></i></p>
+        <p style={{fontWeight:'bold'}} className="animated-text">Graphig Design</p>
+    </div>
+</div>
+
                         <div className="user-team-price mt-3 d-flex align-items-center">
                             <ul>
                                 <li>
@@ -75,19 +74,110 @@ const ContentComp = () => {
                             </div>
                         </div>
                         <div className="main-btn mt-4">
-                            <a   className="btn btn-primary">Explore Now</a>
-                            <a   className="btn btn-outline-primary ms-2">Watch Video</a>
+                            <button className="btn btn-primary" onClick={() => setOpen(true)}>Explore Now</button>
+                            <a className="btn btn-outline-primary ms-2">Watch Video</a>
                         </div>
                     </div>
                     <div className="col-lg-7">
-                        <img src="/assets/images/Home Image 1.svg" alt=""
-                             className="img-fluid rounded-5"/>
+                        {/* <img src="/assets/images/Home Image 1.svg" alt=""
+                             className="img-fluid rounded-5"/> */}
+                             <div className="image-container">
+                                <img src="/assets/images/Home Image 1.svg" alt="Home Image" className="animated-imageHome" />
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {<EnquiryModal open={open} onClose={() => setOpen(false)} />}
+</section>
+
+
+
+
+<section className="section bg-light" id="features">
+    <div className="container">
+        <div className="row align-items-center justify-content-between">
+            <div className="col-lg-6">
+                <div className="title mb-5">
+                    <p className="d-flex align-items-center mb-4">
+                        <span className="icon bg-primary rounded d-flex justify-content-center align-items-center">
+                            <i className="ti ti-key text-white f-18"></i>
+                        </span>
+                        <i className="ti ti-line-dashed text-primary fs-5"></i>
+                        <span className="badge bg-light border text-primary py-2 px-3 f-14">Features</span>
+                    </p>
+                    <h3>Why You Should Choose CreativeCodz ?</h3>
+                    <p className="text-muted">We blend technical expertise with industry insights to create solutions that deliver tangible business results.. </p>
+                </div>
+            </div>
+            <div className="col-lg-3 text-end">
+                <a href="#!" className="btn btn-primary">View Details</a>
+            </div>
+        </div>
+        <div className="row mt-5 g-3">
+            <div className="col-lg-6">
+                <div className="card border-0">
+                    <div className="card-body">
+                        <div className="d-flex align-items-center gap-3 mb-3">
+                            <span className="icon-bg text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
+                                <i className="ti ti-apps fs-4"></i>
+                            </span>
+                            <p className="mb-0 fw-semibold f-18">Expert Team</p>
+                        </div>
+                        <p className="text-muted">Our team is made up of highly skilled professionals with deep expertise across various IT and digital domains.</p>
+                        <a href="#!" className="text-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-6">
+                <div className="card border-0">
+                    <div className="card-body">
+                        <div className="d-flex align-items-center gap-3 mb-3">
+                            <span className="icon-bg text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
+                                <i className="ti ti-jump-rope fs-4"></i>
+                            </span>
+                            <p className="mb-0 fw-semibold f-18">Custom Solutions</p>
+                        </div>
+                        <p className="text-muted">We craft tailored solutions designed to meet the unique needs of your business, ensuring optimal results.</p>
+                        <a href="#!" className="text-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-6">
+                <div className="card border-0">
+                    <div className="card-body">
+                        <div className="d-flex align-items-center gap-3 mb-3">
+                            <span className="icon-bg text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
+                                <i className="ti ti-edit fs-4"></i>
+                            </span>
+                            <p className="mb-0 fw-semibold f-18">Innovative Technologies</p>
+                        </div>
+                        <p className="text-muted">At CreativeCodz, we stay ahead of the curve, utilizing the latest technologies to deliver cutting-edge solutions.</p>
+                        <a href="#!" className="text-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div className="col-lg-6">
+                <div className="card border-0">
+                    <div className="card-body">
+                        <div className="d-flex align-items-center gap-3 mb-3">
+                            <span className="icon-bg text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
+                                <i className="ti ti-alarm fs-4"></i>
+                            </span>
+                            <p className="mb-0 fw-semibold f-18">Client-Centric Approach</p>
+                        </div>
+                        <p className="text-muted">Your success is our top priority. We work hand-in-hand with you at every step to ensure your vision becomes a reality.</p>
+                        <a href="#!" className="text-primary">View More</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 <section className="section" id="about">
     <div className="container">
@@ -100,7 +190,8 @@ const ContentComp = () => {
                     <i className="ti ti-line-dashed text-primary fs-5"></i>
                     <span className="badge bg-light border text-primary py-2 px-3 f-14">About Us </span>
                 </p>
-                <h3 className="lh-base">Why You Should Choose Skywave ?</h3>
+                <h3 className="lh-base">About CreativeCodz</h3>
+                <p>We blend technical expertise with industry insights to create solutions that deliver tangible business results..</p>
             </div>
         </div>
         <div className="row align-items-center mt-5 pt-3">
@@ -109,11 +200,12 @@ const ContentComp = () => {
             </div>
             <div className="col-lg-5">
                 <div className="about-content">
-                    <h5 className="mb-3 lh-base">Skywave offers a comprehensive, user-friendly app experience</h5>
+                    <h5 className="mb-3 lh-base">Our Story</h5>
                     <p className="text-muted">
-                        Choosing Skywave means partnering with a team that's committed to your success. Our app is
-                        designed with your needs in mind, offering an intuitive and user-friendly experience that
-                        simplifies your day-to-day tasks.
+                    Founded in 2024, CreativeCodz is a dynamic startup fueled by a love for technology and creativity. Our vision is to design cutting-edge digital solutions that empower businesses to grow, adapt, and succeed in an ever-changing technological world.
+                    </p>
+                    <p className="text-muted">
+                    As we embark on this journey, our focus remains clear: using technology to tackle real-world challenges. From custom software development to AI-driven solutions, we’re committed to creating impactful products and services that shape the future of business.
                     </p>
                     <div className="pt-3">
                         <a href="#" className="btn btn-primary">Learn more <i className="mdi mdi-arrow-right"></i></a>
@@ -131,93 +223,6 @@ const ContentComp = () => {
                             <h4 className="fw-semibold"><i className="ti ti-star-filled text-warning"></i> 4.5</h4>
                             <p className="mb-0 text-muted">Best Rating</p>
                         </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section className="section bg-light" id="features">
-    <div className="container">
-        <div className="row align-items-center justify-content-between">
-            <div className="col-lg-6">
-                <div className="title mb-5">
-                    <p className="d-flex align-items-center mb-4">
-                        <span className="icon bg-primary rounded d-flex justify-content-center align-items-center">
-                            <i className="ti ti-key text-white f-18"></i>
-                        </span>
-                        <i className="ti ti-line-dashed text-primary fs-5"></i>
-                        <span className="badge bg-light border text-primary py-2 px-3 f-14">Features</span>
-                    </p>
-                    <h3>Amazing Features</h3>
-                    <p className="text-muted">Their diverse skills and creative approaches ensure that we consistently
-                        deliver outstanding results and push the boundaries of what's possible. </p>
-                </div>
-            </div>
-            <div className="col-lg-3 text-end">
-                <a href="#!" className="btn btn-primary">View 12 Features</a>
-            </div>
-        </div>
-        <div className="row mt-5 g-3">
-            <div className="col-lg-6">
-                <div className="card border-0">
-                    <div className="card-body">
-                        <div className="d-flex align-items-center gap-3 mb-3">
-                            <span className="icon-bg text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
-                                <i className="ti ti-apps fs-4"></i>
-                            </span>
-                            <p className="mb-0 fw-semibold f-18">App Integration</p>
-                        </div>
-                        <p className="text-muted">Our product seamlessly integrates with various apps, allowing you to
-                            streamline your workflow and enhance productivity.</p>
-                        <a href="#!" className="text-primary">View More</a>
-                    </div>
-                </div>
-            </div>
-            <div className="col-lg-6">
-                <div className="card border-0">
-                    <div className="card-body">
-                        <div className="d-flex align-items-center gap-3 mb-3">
-                            <span className="icon-bg text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
-                                <i className="ti ti-jump-rope fs-4"></i>
-                            </span>
-                            <p className="mb-0 fw-semibold f-18">Workflow Builder</p>
-                        </div>
-                        <p className="text-muted">The Workflow Builder feature empowers you to create, customize, and
-                            automate tasks with ease. Design efficient workflows.</p>
-                        <a href="#!" className="text-primary">View More</a>
-                    </div>
-                </div>
-            </div>
-            <div className="col-lg-6">
-                <div className="card border-0">
-                    <div className="card-body">
-                        <div className="d-flex align-items-center gap-3 mb-3">
-                            <span className="icon-bg text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
-                                <i className="ti ti-edit fs-4"></i>
-                            </span>
-                            <p className="mb-0 fw-semibold f-18">Specific Tools</p>
-                        </div>
-                        <p className="text-muted">Our product comes equipped with a range of specific tools designed to
-                            enhance functionality and improve efficiency.</p>
-                        <a href="#!" className="text-primary">View More</a>
-                    </div>
-                </div>
-            </div>
-            <div className="col-lg-6">
-                <div className="card border-0">
-                    <div className="card-body">
-                        <div className="d-flex align-items-center gap-3 mb-3">
-                            <span className="icon-bg text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
-                                <i className="ti ti-alarm fs-4"></i>
-                            </span>
-                            <p className="mb-0 fw-semibold f-18">Lifetime Access</p>
-                        </div>
-                        <p className="text-muted">Enjoy the peace of mind that comes with Lifetime Access to our
-                            product. Once you purchase, you'll receive ongoing updates, support.</p>
-                        <a href="#!" className="text-primary">View More</a>
                     </div>
                 </div>
             </div>
