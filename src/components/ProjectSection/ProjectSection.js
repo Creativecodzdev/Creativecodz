@@ -160,7 +160,7 @@ const ProjectSection = (props) => {
                         </Slider>
                     </div>
                 </div>
-                <div className="sa-projecr_brand pt-70">
+                {/* <div className="sa-projecr_brand pt-70">
                     <div className="container">
                         <div className="seo-project-slider-nav">
                             <Slider
@@ -212,7 +212,7 @@ const ProjectSection = (props) => {
                             </Slider>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

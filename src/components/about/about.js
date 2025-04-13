@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Fade } from "react-awesome-reveal";
 import icon from '../../images/icon/magic.png'
@@ -13,6 +13,50 @@ const About = (props) => {
         window.scrollTo(10, 0);
     }
 
+
+    // useEffect(() => {
+    //     const elements = document.querySelectorAll('.xb-item--holder');
+      
+    //     const handleScroll = () => {
+    //       elements.forEach((el) => {
+    //         const rect = el.getBoundingClientRect();
+    //         if (rect.top < window.innerHeight - 100) {
+    //           el.classList.add('animate-in');
+    //         }
+    //       });
+    //     };
+      
+    //     window.addEventListener('scroll', handleScroll);
+    //     handleScroll();
+      
+    //     return () => window.removeEventListener('scroll', handleScroll);
+    //   }, []);
+
+
+    useEffect(() => {
+        const elements = document.querySelectorAll('.xb-item--holder');
+      
+        const handleScroll = () => {
+          elements.forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            const inView = rect.top < window.innerHeight - 100 && rect.bottom > 100;
+      
+            if (inView) {
+              el.classList.add('animate-in');
+            } else {
+              el.classList.remove('animate-in'); // <-- This line makes it repeat
+            }
+          });
+        };
+      
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+      
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
+      
+      
+
     return (
         <section id="about" className="about m-lr">
             <div className="about-wrapper sec-bg pos-rel pb-130 pt-130">
@@ -20,7 +64,7 @@ const About = (props) => {
                     <div className="sec-title--two text-center">
                         <Fade direction='down' triggerOnce={'false'} duration={1000} delay={9}>
                             <div className="sub-title wow fadeInDown" data-wow-duration="600ms">
-                                <img src={icon} alt="" /> We are innomax
+                                <img src={icon} alt="" /> We are CreativeCodz
                             </div>
                         </Fade>
                         <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
@@ -30,8 +74,8 @@ const About = (props) => {
                     </div>
                     <div className="row">
                         <div className="col-lg-6 mt-50">
-                            <div className="about-left">
-                                <h2 className="title">Coure values</h2>
+                            <div className="about-left" style={{paddingRight:'30px'}}>
+                                <center><h2 className="title">Coure values</h2></center>
                                 <div className="about-item_box ul_li">
                                     <div className="xb-item--icon"><img src={about1} alt="" /></div>
                                     <div className="xb-item--holder">
