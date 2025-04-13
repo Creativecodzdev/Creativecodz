@@ -4164,7 +4164,7 @@ body[data-aos-easing=ease] [data-aos] {
   right: 0;
   z-index: 3;
   padding: 5px 0;
-  margin-bottom: 22px;
+  margin-bottom: 0px;
 }
 
 .header-style-two .header-top span {
@@ -4701,7 +4701,8 @@ body[data-aos-easing=ease] [data-aos] {
   transform: translateY(0%);
   -webkit-animation: smoothScroll 1s forwards;
   animation: smoothScroll 1s forwards;
-  padding: 10px 0;
+  padding: 5px 0;
+  box-shadow: rgb(38, 57, 77) 0px 10px 30px -10px !important;
 }
 .header-style-six .stricked-menu.stricky-fixed {
   padding: 0px 0;
@@ -22002,4 +22003,12 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 .imagecontentdes.float-effect {
   animation: float 4s ease-in-out infinite;
+}
+
+
+.Logo_font {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.5px; /* Adjust as needed */
+  color: #000; /* Match the color in the image */
 }

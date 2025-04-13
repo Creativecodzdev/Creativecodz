@@ -14,7 +14,8 @@ import icon10 from '../../images/icon/m_09.svg'
 import icon11 from '../../images/icon/m_10.svg'
 import icon12 from '../../images/icon/m_11.svg'
 import icon13 from '../../images/icon/sms-white-icon01.svg'
-import logo from '../../images/customeImages/Gradient Modern Technology Company Developers Logo.svg'
+import logo from '../../images/customeImages/Gradient Modern Technology Company Developers Logo-cropped_1.svg'
+import logo_title_font from '../../images/customeImages/Gradient Modern Technology Company Developers Logo-cropped_dashed.svg'
 import clogo1 from '../../images/logo/client-logo.svg'
 import clogo2 from '../../images/logo/client-logo2.svg'
 import avatar from '../../images/bg/avatar.png'
@@ -69,7 +70,11 @@ const Header = (props) => {
                 <div className="container">
                     <div className="header__wrap ul_li_between">
                         <div className="header-logo">
-                            <Link onClick={ClickHandler} to="/"><img src={logo} alt="" style={{height:'100px', width:'210px'}}/></Link>
+                            <Link onClick={ClickHandler} to="/" style={{display:'flex', flexDirection:'column', justifyContent:'center', justifyItems:'center', alignItems:'center', paddingTop:'5px'}}>
+                            <img src={logo} alt="" style={{height:'55px', width:'110px'}}/>
+                            {/* <span className="Logo_font">CreativeCodz</span> */}
+                            <img src={logo_title_font} alt="" style={{height:'20px', width:'110px'}}/>
+                            </Link>
                         </div>
                         <div className="main-menu__wrap ul_li navbar navbar-expand-xl">
                             <nav className="main-menu collapse navbar-collapse">
